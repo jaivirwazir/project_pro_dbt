@@ -1,0 +1,23 @@
+dbt_test_project:
+  outputs:
+    dev:
+      account: dx48665.us-east-2.aws
+      database: DEMO_DB
+      password: Work1aig!
+      role: test
+      schema: DBT_RAW
+      threads: 1
+      type: snowflake
+      user: jaivirwazir
+      warehouse: COMPUTE_WH
+    prod:
+      account: dx48665.us-east-2.aws
+      database: DEMO_DB
+      password: Work1aig!
+      role: test
+      schema: DBT_PROD
+      threads: 1
+      type: snowflake
+      user: jaivirwazir
+      warehouse: COMPUTE_WH
+  target: dev
